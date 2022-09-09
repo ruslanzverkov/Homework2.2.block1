@@ -1,1 +1,3 @@
-/Homework2.2.block1.iml
+*.iml
+/out/
+/.idea/
