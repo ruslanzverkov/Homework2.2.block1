@@ -1,3 +1,3 @@
-public class Bicycle extends Truck {
+public class Bicycle extends AllCar{
 
 }

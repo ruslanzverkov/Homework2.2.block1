@@ -28,6 +28,23 @@ public class Main {
             station.check(null, bicycle2, null);
             station.check(null, null, truck);
             station.check(null, null, truck2);
+
+            ServiceStation1 station1=new ServiceStation1();
+            station1.check("car1");
+            station1.check(4);
+            station1.check(car);
+            station1.check("car2");
+            station1.check(4);
+            station1.check(car2);
+            station1.check("truck1");
+            station1.check(6);
+            station1.check(truck);
+            station1.check("truck2");
+            station1.check(8);
+            station1.check(truck2);
+
+
+
         }
 
 
