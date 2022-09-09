@@ -1,12 +1,13 @@
 public class ServiceStation {
 
+
         public void check(Car car, Bicycle bicycle, Truck truck) {
             if (car != null) {
                 System.out.println("Обслуживаем " + car.getModelName());
                 for (int i = 0; i < car.getWheelsCount(); i++) {
                     car.updateTyre();
                 }
-                car.checkEngine();
+                 car.checkEngine();
             } else if (truck != null) {
                 System.out.println("Обслуживаем " + truck.getModelName());
                 for (int i = 0; i < truck.getWheelsCount(); i++) {
@@ -21,5 +22,7 @@ public class ServiceStation {
                 }
             }
         }
+
+
 
 }
