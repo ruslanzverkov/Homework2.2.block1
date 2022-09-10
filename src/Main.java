@@ -32,16 +32,22 @@ public class Main {
             ServiceStation1 station1=new ServiceStation1();
             station1.check("car1");
             station1.check(4);
-            station1.check(car);
+            car.check(car);
             station1.check("car2");
             station1.check(4);
-            station1.check(car2);
+            car2.check(car2);
             station1.check("truck1");
             station1.check(6);
-            station1.check(truck);
+            truck.check(truck);
             station1.check("truck2");
             station1.check(8);
-            station1.check(truck2);
+            truck2.check(truck2);
+            station1.check("bicycle");
+            station1.check(2);
+            bicycle.check(bicycle);
+            station1.check("bicycle2");
+            station1.check(2);
+            bicycle2.check(bicycle2);
 
 
 

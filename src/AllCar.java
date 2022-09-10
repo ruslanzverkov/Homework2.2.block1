@@ -33,4 +33,10 @@ public abstract  class AllCar {
         System.out.println("Проверяем прицеп");
     }
 
+    public void check(AllCar allCar) {
+
+    }
+
+
+
 }
