@@ -21,12 +21,38 @@ public class Main {
         bicycle.setWheelsCount(2);
         bicycle2.setWheelsCount(2);
 
-        ServiceStation station = new ServiceStation();
+        OldServiceStation station = new OldServiceStation();
         station.check(car, null, null);
         station.check(car2, null, null);
         station.check(null, bicycle, null);
         station.check(null, bicycle2, null);
         station.check(null, null, truck);
         station.check(null, null, truck2);
+
+        UpdateServiceStation station1=new UpdateServiceStation();
+        car.check();
+        station1.check(car.getWheelsCount());
+        station1.check(car);
+
+        car2.check();
+        station1.check(car2.getWheelsCount());
+        station1.check(car2);
+
+        truck.check();
+        station1.check(truck.getWheelsCount());
+        station1.check(truck);
+
+        truck2.check();
+        station1.check(truck2.getWheelsCount());
+        station1.check(truck2);
+
+        bicycle.check();
+        station1.check(bicycle.getWheelsCount());
+        station1.check(bicycle);
+
+        bicycle2.check();
+        station1.check(bicycle2.getWheelsCount());
+        station1.check(bicycle2);
+
     }
 }
