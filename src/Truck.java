@@ -1,7 +1,6 @@
-public class  Truck  {
+public class  Truck extends AllTransport {
 
-        public String modelName;
-        public int wheelsCount;
+
 
         public void updateTyre() {
             System.out.println("Меняем покрышку");
