@@ -1,11 +1,14 @@
-public class Car extends AllCar{
+public class Car{
 
+        public String modelName;
+        public int wheelsCount;
 
-    @Override
-    public void check(AllCar allCar) {
-        super.check(allCar);
-        if (allCar != null) {
-            allCar.checkEngine();
+        public void updateTyre() {
+            System.out.println("Меняем покрышку");
         }
-    }
+
+        public void checkEngine() {
+            System.out.println("Проверяем двигатель");
+        }
+
 }
