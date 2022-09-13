@@ -3,6 +3,10 @@ public abstract class AllTransport {
     private String modelName;
     private int wheelsCount;
 
+    public AllTransport(String modelName, int wheelsCount) {
+        this.modelName = modelName;
+        this.wheelsCount = wheelsCount;
+    }
     public String getModelName() {
         return modelName;
     }
@@ -19,11 +23,8 @@ public abstract class AllTransport {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
+    public abstract void updateTyre();
 
-    public  void check(){
-        System.out.println("Обслуживаем " + this.getModelName());
-    };
+    public abstract void transportService();
+
 }
